@@ -1,0 +1,92 @@
+html body {
+  background-color: hsla(28, 100%, 31%, 0.72);
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#container h1 {
+	text-align: center;
+	font-family: 'VT323', monospace;
+	color: rgb(255, 197, 130);
+	font-size: 500%;
+	font-weight: 600;
+}
+
+#container {
+  background-color: hsla(28, 93%, 28%, 0.71);
+  width: 50%;
+}
+
+#container a:link {
+  text-decoration: none;
+}
+
+#All, #Online, #Offline{
+	font-size: 120%;
+	font-weight: bold;
+	color: #fffbf4;
+}
+
+/* user rows */
+
+div.results {
+	border-radius: 1.5%;
+	border-width: 3px;
+	margin: 1%;
+	padding:1.5%;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	background: rgba(216, 148, 85, 0.65);
+	border-style: ridge;
+	border-color: #ce8746;
+
+}
+
+.results:hover {
+	background-color: #985419;
+	border-left-width: 10px;
+	border-left-color: #e26b01;
+}
+
+/* row elements */
+
+.logo {
+    margin: 1%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.user {
+  font-size: 120%;
+  color: hsl(29, 88%, 17%);
+  font-weight: 600;
+}
+
+.description, .statusOffline {
+  font-size: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.statusOffline {
+ 	color: #58584c;
+	font-style: italic;
+}
+
+
+@media screen and (max-width: 900px) {
+		#container{width: 70%;}
+}
+@media screen and (max-width: 580px) {
+		#container{width: 100%;}
+		.logo{width: 42px; height: 42px;}
+}
